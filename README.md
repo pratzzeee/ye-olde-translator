@@ -4,6 +4,14 @@ Translates modern English into authentic 1800s Victorian English using the Anthr
 
 🔗 **[Visit the site](https://ye-olde-translator.vercel.app)**
 
+## Screenshots
+
+![Homepage](screenshots/homepage.png)
+
+![Translation in action](screenshots/translation.png)
+
+![Scribe loading](screenshots/loading.png)
+
 ## File structure
 
 ```
@@ -26,4 +34,5 @@ npm i -g vercel
 vercel dev
 ```
 
+Runs on http://localhost:3000
 Runs on http://localhost:3000
