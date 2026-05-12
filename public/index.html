@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ye Olde Tongue — 1800s Translator</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <header class="header">
+      <div class="flourish">✦</div>
+      <p class="ornament">Est. Anno Domini MDCCC</p>
+      <h1>Ye Olde Tongue</h1>
+      <p class="subtitle">
+        A most magnificent apparatus for the rendering of modern speech<br>
+        into the noble English of centuries past
+      </p>
+    </header>
+
+    <div class="scrolls">
+
+      <!-- Input -->
+      <div class="scroll">
+        <span class="corner-mark tl">❧</span>
+        <span class="corner-mark br">❧</span>
+        <div class="scroll-header">
+          <span class="scroll-label">Thine Modern Utterance</span>
+        </div>
+        <textarea
+          id="inputText"
+          placeholder="Inscribe thy modern words herein… e.g. 'I can't believe how good this pizza is'"
+          maxlength="2000"
+        ></textarea>
+        <div id="charCount" class="char-count">0 / 2000</div>
+      </div>
+
+      <!-- Output -->
+      <div class="scroll">
+        <span class="corner-mark tl">❧</span>
+        <span class="corner-mark br">❧</span>
+        <div class="scroll-header">
+          <span class="scroll-label">The Olde Rendering</span>
+        </div>
+        <div class="loading-quill" id="loadingQuill">
+          <div class="quill-icon">🪶</div>
+          <div>The scribe doth labour most diligently…</div>
+        </div>
+        <div class="output-area" id="outputArea">
+          <span class="output-placeholder">
+            Thy translation shall appear herein…
+          </span>
+        </div>
+        <div class="error-msg" id="errorMsg"></div>
+      </div>
+
+    </div>
+
+    <div class="action-center">
+      <button class="translate-btn" id="translateBtn">
+        ✦ &nbsp; Translate Forthwith &nbsp; ✦
+      </button>
+      <button class="copy-btn" id="copyBtn">⊕ Copy Translation</button>
+    </div>
+
+    <footer class="footer">
+      Powered by the Anthropic Analytical Engine · All rights most firmly reserved
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
